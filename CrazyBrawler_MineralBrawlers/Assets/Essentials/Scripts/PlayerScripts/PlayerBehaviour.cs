@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
-using EZCameraShake;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerBehaviour : MonoBehaviour
@@ -16,14 +15,8 @@ public class PlayerBehaviour : MonoBehaviour
     public GameObject[] AttackTriggers { get => _attackTriggers; set { _attackTriggers = value; } }
 
     [SerializeField] private PunchHitDetection[] _hitDetection;
-
-    [SerializeField] private bool _HitPointsOn;
     [SerializeField] private GameObject _floatingPoints;
     [SerializeField] private Transform _instantiationPointFloatingPoints;
-
-    [SerializeField] private bool _EffectsOn;
-    [SerializeField] private GameObject _HitParticleEffect;
-    [SerializeField] private Transform _instantiationPointParticleEffects;
 
     private int _playerNumber = 1;
     public int PlayerNumber { get => _playerNumber; set { _playerNumber = value; } }    
@@ -39,7 +32,6 @@ public class PlayerBehaviour : MonoBehaviour
     public event EventHandler OnChangeCurrentHealth;
 
     private CharacterController _characterController;
-    private GameController _gameController;
     private Vector3 _direction;
 
     private string _horizontalAxis, _normalAttackButton, _heavyAttackButton, _blockButton;
@@ -51,7 +43,6 @@ public class PlayerBehaviour : MonoBehaviour
     private float _objectWidth;
 
     private Vector3 impact;
-    private float _knockBackForce = 500;
 
     // Start is called before the first frame update
     public void Initialize()
@@ -72,7 +63,6 @@ public class PlayerBehaviour : MonoBehaviour
         }
 
         _characterController = GetComponent<CharacterController>();
-        _gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
 
         _screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         _objectWidth = GetComponent<Collider>().bounds.size.x;
@@ -82,7 +72,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
-        if (_hasInitialized && _gameController.IsGamePlaying)
+        if (_hasInitialized && GameController.IsGamePlaying)
         {
             if (Input.GetButtonDown(_normalAttackButton) && !_isAttacking)
             {
@@ -117,7 +107,8 @@ public class PlayerBehaviour : MonoBehaviour
     private void TriggerFightEnd()
     {
         _animController.SetTrigger("HasFainted");
-        _gameController.IsGamePlaying = false;
+        GameController.ChangeGameState(false);
+        StartCoroutine(GameController.GoToCharacterSelectScreen());
     }
 
     private IEnumerator TimeTillBlock()
@@ -151,42 +142,33 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void InstantiateDamage()
     {
-        if(_EffectsOn)
-        {
-            GameObject particles = Instantiate(_HitParticleEffect, transform.position, Quaternion.identity);
-            particles.transform.position = _instantiationPointParticleEffects.position;
-            CameraShaker.Instance.ShakeOnce(2,10,0.25f,0.25f);
-        }
-        if(_HitPointsOn)
-        {
-            GameObject go = Instantiate(_floatingPoints, transform.position, Quaternion.identity);
-            go.transform.position = _instantiationPointFloatingPoints.position;
-            go.transform.parent = null;
-            FloatingDamageBehaviour fdb = go.GetComponentInChildren<FloatingDamageBehaviour>();
-            fdb.DamageAmount = _characterStats.ActualDamageTaken;
-            fdb.Initialize();
-        }
+        GameObject go = Instantiate(_floatingPoints, transform.position, Quaternion.identity);
+        go.transform.position = _instantiationPointFloatingPoints.position;
+        go.transform.parent = null;
+        FloatingDamageBehaviour fdb = go.GetComponentInChildren<FloatingDamageBehaviour>();
+        fdb.DamageAmount = _characterStats.ActualDamageTaken;
+        fdb.Initialize();
     }
 
     private void DoDamage(GameObject go, Vector3 direction)
     {
         if (!_isDamageDone)
         {
-            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, _knockBackForce, direction);
+            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, 40, direction);
             _isDamageDone = true;
         }
     }
 
     private void FixedUpdate()
     {
-        if (_hasInitialized && _gameController.IsGamePlaying)
+        if (_hasInitialized && GameController.IsGamePlaying)
         {
             if (!_isAttacking)
             {
                 WalkAndIdle();
             }
         }
-        if(_hasInitialized && !_gameController.IsGamePlaying) _animController.SetFloat("WalkSpeed", 0);
+        if(_hasInitialized && !GameController.IsGamePlaying) _animController.SetFloat("WalkSpeed", 0);
     }
 
     private void WalkAndIdle()

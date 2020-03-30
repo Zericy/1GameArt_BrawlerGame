@@ -1599,6 +1599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a531c0e364bf2314e89d5dfa2176fecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _instantiationPointParticles: {fileID: 0}
+  _particle: {fileID: 0}
+  _particleDuration: 0
 --- !u!65 &2092674667
 BoxCollider:
   m_ObjectHideFlags: 0
