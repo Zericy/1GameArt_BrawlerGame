@@ -1115,6 +1115,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arena1
       objectReference: {fileID: 0}
+    - target: {fileID: 8405317065323677370, guid: 17e724ed79625614297173c825f6c913,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be35c76fd5deae8479b178bcb4c52623, type: 2}
+    - target: {fileID: 8815280180057039468, guid: 17e724ed79625614297173c825f6c913,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 758dbaa63befd194fad0779dee2565e2, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17e724ed79625614297173c825f6c913, type: 3}
 --- !u!1 &874347853 stripped
@@ -1465,6 +1475,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigFistBoi
       objectReference: {fileID: 0}
+    - target: {fileID: 4789364565688662053, guid: 00ca0ff9d36d57247a239e8342380f49,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be35c76fd5deae8479b178bcb4c52623, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ca0ff9d36d57247a239e8342380f49, type: 3}
 --- !u!1 &1994390783 stripped
