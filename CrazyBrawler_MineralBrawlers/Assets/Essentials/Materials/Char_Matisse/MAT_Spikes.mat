@@ -9,8 +9,8 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: MAT_Spikes
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_ShaderKeywords: _EMISSION
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 2050
@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: be8325c1df22ff143a2adde72354050e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 31530600f0f251345aef9920e58887e6, type: 3}
         m_Scale: {x: 0.3, y: 0.3}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -59,11 +59,11 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0.386
+    - _Metallic: 0
     - _OcclusionStrength: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Smoothness: 0.408
+    - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
@@ -73,7 +73,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.3137255, g: 0.5058824, b: 0.6627451, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColor: {r: 0.26223743, g: 0.6698113, b: 0.60459316, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
 --- !u!114 &5254364522569536494
 MonoBehaviour:
