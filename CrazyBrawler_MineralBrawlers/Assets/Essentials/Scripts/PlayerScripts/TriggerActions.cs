@@ -3,7 +3,8 @@
 public class TriggerActions : MonoBehaviour
 {
     [SerializeField] private PlayerBehaviour _playerBeh;
-
+    [SerializeField] private Transform _instantiationPointParticles;
+    [SerializeField] private ParticleSystem _attackParticleEffect;
     public void ResetAnimTrigger()
     {
         _playerBeh.AnimController.ResetTrigger("FastAttack");
@@ -39,5 +40,13 @@ public class TriggerActions : MonoBehaviour
         {
             trigger.SetActive(true);
         }
+    }
+
+    public void TriggerParticles()
+    {
+        GameObject obj = Instantiate(_attackParticleEffect.gameObject, _instantiationPointParticles);
+        obj.transform.position = _instantiationPointParticles.transform.position;
+        obj.transform.SetParent(null);
+        Destroy(obj, _attackParticleEffect.main.duration);
     }
 }
