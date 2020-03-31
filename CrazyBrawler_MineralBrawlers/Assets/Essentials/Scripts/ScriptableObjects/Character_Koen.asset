@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 250
   _normalAttackDamage: 25
-  _heavyAttackDamage: 50
-  _characterSpeed: 5
+  _heavyAttackDamage: 80
+  _characterSpeed: 9
   _timeUntilNextBlock: 2
   _defence: 20
+  _weight: 5
