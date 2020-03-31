@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HeavyAttack
-  m_Speed: 0.7
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3777354966052376976}
@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 669428f3f90b5694ebae2bea2202f793, type: 2}
+  m_Motion: {fileID: 7400000, guid: 909f5438054f77043be70f59e85afdd7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -262,7 +262,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Controller_Matisse
+  m_Name: Controller_Toon
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: WalkSpeed
@@ -360,7 +360,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: db16442071cac5646bf6b596dd40ec80, type: 2}
+  m_Motion: {fileID: 7400000, guid: 135291f220ade694eb664111dca0fc4c, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -374,7 +374,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Block
-  m_Speed: 0.8
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 3772398790913003595}
@@ -387,7 +387,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: aa317339cc904f0448dd4494884a3a9e, type: 2}
+  m_Motion: {fileID: 7400000, guid: d3cdd83098ce21143b0e078284603ef2, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -414,7 +414,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e58b9cc78bffcb041bd57b3f45e905ba, type: 2}
+  m_Motion: {fileID: 7400000, guid: a9d4edc159fb6674db648fa10fca93fb, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -536,7 +536,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Fainted
-  m_Speed: 0.3
+  m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -548,7 +548,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 03b2ad77362e2af48bbcc8a271725c05, type: 2}
+  m_Motion: {fileID: 7400000, guid: de637748e056ba8448626e508506a67b, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -616,26 +616,26 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 85b09a3bc12324540ac7ee6e96eaf4d3, type: 2}
+    m_Motion: {fileID: 7400000, guid: 02d869865e653fb45a8ee6f95635d0f4, type: 2}
     m_Threshold: -1
     m_Position: {x: -0.5, y: -0.5}
-    m_TimeScale: -0.8
+    m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: WalkSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: e45b337dc067a9b4796d7dc2898f2d21, type: 2}
+    m_Motion: {fileID: 7400000, guid: b47951fbf7d31ba408e72bc60c120df2, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
-    m_TimeScale: 0.7
+    m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: WalkSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 85b09a3bc12324540ac7ee6e96eaf4d3, type: 2}
+    m_Motion: {fileID: 7400000, guid: e4fd547d64e2b664fb8ed0691652c2a8, type: 2}
     m_Threshold: 1
     m_Position: {x: 0.5, y: 0.5}
-    m_TimeScale: 0.8
+    m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: WalkSpeed
     m_Mirror: 0
