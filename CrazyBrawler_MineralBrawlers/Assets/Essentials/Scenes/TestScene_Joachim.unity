@@ -1757,6 +1757,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a531c0e364bf2314e89d5dfa2176fecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _effectsOn: 0
+  _instantiationPointParticles: {fileID: 0}
+  _particle: {fileID: 0}
+  _particleDuration: 0
 --- !u!65 &2092674667
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3107,6 +3111,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a531c0e364bf2314e89d5dfa2176fecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _effectsOn: 0
+  _instantiationPointParticles: {fileID: 0}
+  _particle: {fileID: 0}
+  _particleDuration: 0
 --- !u!4 &6201929617154204613
 Transform:
   m_ObjectHideFlags: 0
@@ -3171,14 +3179,9 @@ MonoBehaviour:
   - {fileID: 1102366665030868791}
   _hitDetection:
   - {fileID: 6197753909355064553}
-  _HitPointsOn: 1
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 5227905882523380339}
-  _EffectsOn: 1
-  _HitParticleEffect: {fileID: 730340980080508641, guid: e9a407a7bd6fcae48a4e74c68fdc05fd,
-    type: 3}
-  _instantiationPointParticleEffects: {fileID: 1438339176022852356}
 --- !u!54 &6284802541701469217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3787,14 +3790,9 @@ MonoBehaviour:
   - {fileID: 1102366665030868791}
   _hitDetection:
   - {fileID: 6197753909355064553}
-  _HitPointsOn: 1
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 141171634}
-  _EffectsOn: 1
-  _HitParticleEffect: {fileID: 730340980080508641, guid: e9a407a7bd6fcae48a4e74c68fdc05fd,
-    type: 3}
-  _instantiationPointParticleEffects: {fileID: 101107498}
 --- !u!1 &8387619860721673784
 GameObject:
   m_ObjectHideFlags: 0
