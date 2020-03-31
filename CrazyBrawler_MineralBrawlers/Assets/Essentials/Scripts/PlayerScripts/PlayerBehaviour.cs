@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using EZCameraShake;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerBehaviour : MonoBehaviour
@@ -17,6 +18,9 @@ public class PlayerBehaviour : MonoBehaviour
     [SerializeField] private PunchHitDetection[] _hitDetection;
     [SerializeField] private GameObject _floatingPoints;
     [SerializeField] private Transform _instantiationPointFloatingPoints;
+
+    [SerializeField] private Transform _instantiationPointParticles;
+    [SerializeField] private ParticleSystem _hitParticleEffect;
 
     private int _playerNumber = 1;
     public int PlayerNumber { get => _playerNumber; set { _playerNumber = value; } }    
@@ -38,11 +42,12 @@ public class PlayerBehaviour : MonoBehaviour
     private bool _canBlock = true;
     private bool _hasInitialized = false;
     private float _doDamageValue = 0;
-
     private Vector2 _screenBounds;
     private float _objectWidth;
 
     private Vector3 impact;
+
+    
 
     // Start is called before the first frame update
     public void Initialize()
@@ -134,9 +139,16 @@ public class PlayerBehaviour : MonoBehaviour
             if (_currentHP < 0) _currentHP = 0;
             OnChangeCurrentHealth?.Invoke(this, EventArgs.Empty);
 
-            impact += direction * force / _characterStats.Defence;
+            impact += direction * force / _characterStats.Weight;
          
-            Debug.Log($"Player{_playerNumber} impact value = {impact}");
+            //Debug.Log($"Player{_playerNumber} impact value = {impact}");
+        }
+        if (_instantiationPointParticles != null)
+        {
+            GameObject obj = Instantiate(_hitParticleEffect.gameObject, _instantiationPointParticles);
+            obj.transform.position = _instantiationPointParticles.transform.position;
+            obj.transform.SetParent(null);
+            Destroy(obj, _hitParticleEffect.main.duration);
         }
     }
 
@@ -154,7 +166,9 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (!_isDamageDone)
         {
-            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, 40, direction);
+            go?.GetComponent<PlayerBehaviour>()?.TakeDamage(_doDamageValue, _characterStats.ActualDamageTaken, direction);
+            CameraShaker.Instance.ShakeOnce(_doDamageValue / 5, (_doDamageValue/5)*2, 0.25f, 0.5f);
+            
             _isDamageDone = true;
         }
     }
@@ -163,7 +177,7 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (_hasInitialized && GameController.IsGamePlaying)
         {
-            if (!_isAttacking)
+            if (!_isAttacking&&!_isBlocking)
             {
                 WalkAndIdle();
             }
