@@ -1848,5 +1848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: char_Maxim
       objectReference: {fileID: 0}
+    - target: {fileID: 8122675134154007353, guid: 7d6867d32516c6c438457636843737c6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d6867d32516c6c438457636843737c6, type: 3}
