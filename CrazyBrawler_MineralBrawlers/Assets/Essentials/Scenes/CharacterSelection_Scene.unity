@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: ac809cc58c3d7a4408b6910381bad2e7,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -783,11 +783,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
-      propertyPath: _characterObjects.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
       propertyPath: _gameController
       value: 
       objectReference: {fileID: 1855804161}
@@ -813,45 +808,10 @@ PrefabInstance:
       objectReference: {fileID: 1369516933}
     - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
-      propertyPath: _characterObjects.Array.data[0]
-      value: 
-      objectReference: {fileID: 8122675134154007353, guid: 7d6867d32516c6c438457636843737c6,
-        type: 3}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
-      propertyPath: _characterObjects.Array.data[1]
-      value: 
-      objectReference: {fileID: 1476257817480213465, guid: e249170618e398f44a14570cd91f19a8,
-        type: 3}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
-      propertyPath: _characterObjects.Array.data[2]
-      value: 
-      objectReference: {fileID: 8031320005346060192, guid: 81816d1358258c348a134e1fb29b2704,
-        type: 3}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
-      propertyPath: _characterObjects.Array.data[3]
-      value: 
-      objectReference: {fileID: 3885425733024553925, guid: 1d317314126104349b593215ad20ae67,
-        type: 3}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
-      propertyPath: _characterObjects.Array.data[4]
-      value: 
-      objectReference: {fileID: 8031320005346060192, guid: 81816d1358258c348a134e1fb29b2704,
-        type: 3}
-    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
       propertyPath: _characterObjects.Array.data[5]
       value: 
-      objectReference: {fileID: 8031320005346060192, guid: 81816d1358258c348a134e1fb29b2704,
+      objectReference: {fileID: 6216894286101146483, guid: 286b4e0e39202d2408c0c2b183a281fe,
         type: 3}
-    - target: {fileID: 8478884754606119421, guid: da0d4aab4e551d94e9339f2a8bc20401,
-        type: 3}
-      propertyPath: _sceneNameToLoad
-      value: TestScene_Larissa
-      objectReference: {fileID: 0}
     - target: {fileID: 8648296630129270893, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
       propertyPath: m_AnchorMax.y
