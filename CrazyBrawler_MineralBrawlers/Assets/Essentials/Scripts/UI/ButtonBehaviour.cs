@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,9 +21,11 @@ public class ButtonBehaviour : MonoBehaviour
         } 
     }
 
-    [SerializeField] private Text _text;
+    [SerializeField] private TextMeshProUGUI _text;
     [SerializeField] private bool _isCharacterSelectButton, _isSceneChangingButton;
     [SerializeField] private string _sceneNameToLoad;
+    [SerializeField] private Image _image;
+    [SerializeField] private Sprite[] _sprites;
 
     public ButtonBehaviour(GameObject characterObject, CharacterButtonSetup characterSetup, int characterNumber)
     {
@@ -45,6 +48,18 @@ public class ButtonBehaviour : MonoBehaviour
     {
         if (_isSceneChangingButton) SetSceneInSelectScreen(_sceneNameToLoad);
         else if (_isCharacterSelectButton) ChangeCharacter(playerNumber);
+    }
+
+    public void TaskOnHover()
+    {
+        if(_sprites.Length>=1)
+            _image.sprite = _sprites[1];
+    }
+
+    public void ResetSprite()
+    {
+        if (_sprites.Length >= 1)
+            _image.sprite = _sprites[0];
     }
 
     public void SetSceneInSelectScreen(string sceneName)
