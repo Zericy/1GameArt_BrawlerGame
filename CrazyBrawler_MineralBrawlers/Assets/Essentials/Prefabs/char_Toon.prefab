@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 7448203640684309205}
   - component: {fileID: 7448203640684309206}
   m_Layer: 0
-  m_Name: char_Toon_model
+  m_Name: char_Toon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,7 +182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476257817480213465}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.230648, y: 16.653793, z: 20.42669}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 713012754342071957}

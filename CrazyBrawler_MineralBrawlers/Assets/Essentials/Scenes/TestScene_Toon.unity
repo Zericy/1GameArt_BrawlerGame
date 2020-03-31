@@ -328,7 +328,7 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
---- !u!1001 &7448203641331959560
+--- !u!1001 &1973971559
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -338,22 +338,22 @@ PrefabInstance:
     - target: {fileID: 1476257817480213465, guid: e249170618e398f44a14570cd91f19a8,
         type: 3}
       propertyPath: m_Name
-      value: char_Toon_model
+      value: char_Toon
       objectReference: {fileID: 0}
     - target: {fileID: 2461183597774356938, guid: e249170618e398f44a14570cd91f19a8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.230648
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2461183597774356938, guid: e249170618e398f44a14570cd91f19a8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.653793
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2461183597774356938, guid: e249170618e398f44a14570cd91f19a8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20.42669
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2461183597774356938, guid: e249170618e398f44a14570cd91f19a8,
         type: 3}
