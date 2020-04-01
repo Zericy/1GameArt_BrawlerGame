@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3678380110274812232}
   - component: {fileID: 6603979772170847056}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 2396587927139036312}
   - component: {fileID: 3920289549352212374}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,6 +609,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthbarPlayer1: {fileID: 6107765556476802487}
   _healthbarPlayer2: {fileID: 105747435648320883}
+  _imagePlayer1: {fileID: 5859613346617404367}
+  _imagePlayer2: {fileID: 3478496957568749460}
+  _textPlayer1: {fileID: 6603979772170847056}
+  _textPlayer2: {fileID: 3920289549352212374}
 --- !u!1 &6107765556476802485
 GameObject:
   m_ObjectHideFlags: 0
