@@ -1,9 +1,16 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "CharacterData", menuName = "ScriptableObjects/CharacterStats", order = 1)]
 public class CharacterStats : ScriptableObject
 {
+    [SerializeField] private Sprite _characterImage;
+    public Sprite CharacterImage => _characterImage;
+
+    [SerializeField] private string _characterName;
+    public String CharacterName => _characterName;
+
     [Range(150, 400)] [SerializeField] private float _health;
     public float Health => _health;
     [Range(15, 50)] [SerializeField] private float _normalAttackDamage;
@@ -23,8 +30,11 @@ public class CharacterStats : ScriptableObject
 
     private float _actualDamageTaken;
     public float ActualDamageTaken => _actualDamageTaken;
+    
+    
 
     private System.Random _random;
+    
 
     public void Initialize()
     {

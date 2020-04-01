@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Character_Matisse
   m_EditorClassIdentifier: 
+  _characterImage: {fileID: 21300000, guid: e8ef9beb36f6102478200d03b06e812c, type: 3}
+  _characterName: Matisse
   _health: 250
   _normalAttackDamage: 30
   _heavyAttackDamage: 69

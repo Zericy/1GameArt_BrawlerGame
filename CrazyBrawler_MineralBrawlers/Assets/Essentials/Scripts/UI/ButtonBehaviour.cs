@@ -7,17 +7,17 @@ public class ButtonBehaviour : MonoBehaviour
 {
     private GameObject _characterObject;
     public GameObject CharacterObject { get => _characterObject; set { _characterObject = value; } }
-
+    
     [SerializeField] private CharacterButtonSetup _characterSetup;
     public CharacterButtonSetup CharacterSetup { get => _characterSetup; set { _characterSetup = value; } }
 
-    private int _characterNumber;
-    public int CharacterNumber 
+    private string _characterName;
+    public string CharacterName 
     { 
-        get => _characterNumber; 
+        get => _characterName; 
         set 
-        { _characterNumber = value;
-            _text.text = "Character " + _characterNumber;
+        { _characterName = value;
+            _text.text = value;
         } 
     }
 
@@ -25,14 +25,8 @@ public class ButtonBehaviour : MonoBehaviour
     [SerializeField] private bool _isCharacterSelectButton, _isSceneChangingButton;
     [SerializeField] private string _sceneNameToLoad;
     [SerializeField] private Image _image;
+    public Sprite Image { get => _image.sprite; set { _image.sprite = value; } }
     [SerializeField] private Sprite[] _sprites;
-
-    public ButtonBehaviour(GameObject characterObject, CharacterButtonSetup characterSetup, int characterNumber)
-    {
-        _characterObject = characterObject;
-        _characterSetup = characterSetup;
-        _characterNumber = characterNumber;
-    }
 
     public void ChangeCharacter(int playerNumber)
     {

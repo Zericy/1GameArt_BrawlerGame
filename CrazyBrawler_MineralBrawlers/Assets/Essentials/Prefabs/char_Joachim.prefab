@@ -271,10 +271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a531c0e364bf2314e89d5dfa2176fecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _effectsOn: 0
-  _instantiationPointParticles: {fileID: 0}
-  _particle: {fileID: 0}
-  _particleDuration: 0
 --- !u!1 &1676554164227131706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,7 +1150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 132c3beed0512af43a892a88e187cc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterStats: {fileID: 11400000, guid: 2550180171c370a458439d69b0e6bfac, type: 2}
+  _characterStats: {fileID: 11400000, guid: ad9e495ed244649459e4f9c366cbb26e, type: 2}
   _animController: {fileID: 274918710257153535}
   _attackTriggers:
   - {fileID: 908831815068165676}
@@ -1163,6 +1159,8 @@ MonoBehaviour:
   _floatingPoints: {fileID: 7632250155645166426, guid: 8295131836fdb8d4ebdf27bc4dbf6200,
     type: 3}
   _instantiationPointFloatingPoints: {fileID: 274918710621872809}
+  _instantiationPointParticles: {fileID: 0}
+  _hitParticleEffect: {fileID: 0}
 --- !u!114 &8138382803450373915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1174,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerBeh: {fileID: 8138382803450373914}
+  _instantiationPointParticles: {fileID: 0}
+  _attackParticleEffect: {fileID: 0}
 --- !u!1 &8205636368825332444
 GameObject:
   m_ObjectHideFlags: 0

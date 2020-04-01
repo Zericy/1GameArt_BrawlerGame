@@ -37,9 +37,11 @@ public class CharacterButtonSetup : MonoBehaviour
         for (int i = 1; i <= _characterAmount; i++)
         {
             ButtonBehaviour beh = Instantiate(_characterButtonBehaviour, this.transform);
-            beh.CharacterNumber = i;
+            PlayerBehaviour playerBeh = _characterObjects[i - 1].GetComponent<PlayerBehaviour>();
+            beh.CharacterName = playerBeh.PlayerStats.CharacterName;
             beh.CharacterSetup = this;
             beh.CharacterObject = _characterObjects[i - 1];
+            beh.Image = playerBeh.PlayerStats.CharacterImage;
         }
 
         //_player1Stats.ResetTexts();

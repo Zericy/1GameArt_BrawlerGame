@@ -12,9 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Character_Maxim
   m_EditorClassIdentifier: 
+  _characterImage: {fileID: 21300000, guid: e8ef9beb36f6102478200d03b06e812c, type: 3}
+  _characterName: Maxim
   _health: 240
   _normalAttackDamage: 26.5
   _heavyAttackDamage: 70.2
   _characterSpeed: 10
   _timeUntilNextBlock: 1
   _defence: 20
+  _weight: 5

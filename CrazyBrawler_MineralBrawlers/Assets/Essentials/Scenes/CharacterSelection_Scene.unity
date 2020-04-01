@@ -766,6 +766,36 @@ PrefabInstance:
       propertyPath: IsPlayer2LockedIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_CellSize.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_CellSize.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_Spacing.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_ChildAlignment
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_StartCorner
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: m_Constraint
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da0d4aab4e551d94e9339f2a8bc20401, type: 3}
 --- !u!1001 &8542288262876674564

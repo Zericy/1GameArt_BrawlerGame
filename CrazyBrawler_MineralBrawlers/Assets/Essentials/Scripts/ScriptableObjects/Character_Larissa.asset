@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Character_Larissa
   m_EditorClassIdentifier: 
+  _characterImage: {fileID: 21300000, guid: bf66447ab372298438acd8009951940e, type: 3}
+  _characterName: Calyx
   _health: 250
   _normalAttackDamage: 25
   _heavyAttackDamage: 50
