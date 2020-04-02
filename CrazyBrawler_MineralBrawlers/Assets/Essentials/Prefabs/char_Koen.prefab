@@ -50,11 +50,11 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: ae2c95cde8869f34191b4bd73039872e, type: 2}
+  - {fileID: 2100000, guid: 5bbfa39ffcb39194d9a467f0e437c257, type: 2}
   - {fileID: 2100000, guid: 9e343da908eddbf4590cb31761272cc7, type: 2}
-  - {fileID: 2100000, guid: 9e343da908eddbf4590cb31761272cc7, type: 2}
-  - {fileID: 2100000, guid: 9e343da908eddbf4590cb31761272cc7, type: 2}
-  - {fileID: 2100000, guid: 9e343da908eddbf4590cb31761272cc7, type: 2}
-  - {fileID: 2100000, guid: 4e1a1e7295e2e144a9020a33654e7703, type: 2}
+  - {fileID: 2100000, guid: 36ef1d84194d23b47a1dbc1be88d9091, type: 2}
+  - {fileID: 2100000, guid: a5d61ad078181694fb5b0224bda232d2, type: 2}
+  - {fileID: 2100000, guid: 09bb0bd37d156564dac477777001623b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 8667787610077684146}
   - component: {fileID: 2669479355504931618}
   m_Layer: 0
-  m_Name: KoenCharacter 1
+  m_Name: char_Koen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -757,6 +757,14 @@ MonoBehaviour:
   _playerBeh: {fileID: 6288769002340084145}
   _instantiationPointParticles: {fileID: 0}
   _attackParticleEffect: {fileID: 0}
+  _audioSource: {fileID: 0}
+  _hitSound: {fileID: 0}
+  _quickAttackSound: {fileID: 8300000, guid: 17b387963dbc29b409a513faa4ad02ab, type: 3}
+  _heavyAttackSound: {fileID: 8300000, guid: 2535ee71c76bf1e4c96e9c1e3318b37d, type: 3}
+  _deathSound: {fileID: 0}
+  _selectSound: {fileID: 0}
+  _idleSound: {fileID: 0}
+  _blockSound: {fileID: 0}
 --- !u!95 &2669479355504931618
 Animator:
   serializedVersion: 3
