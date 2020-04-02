@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1efbfe7ba0e45fc48b0388bab81f8483, type: 3}
   m_Name: Character_Joachim
   m_EditorClassIdentifier: 
-  _characterImage: {fileID: 21300000, guid: e8ef9beb36f6102478200d03b06e812c, type: 3}
+  _characterImage: {fileID: 21300000, guid: bd0920830f559644195f8d07013ec2ae, type: 3}
   _characterName: Cobble
   _health: 250
   _normalAttackDamage: 25
