@@ -5,6 +5,19 @@ public class TriggerActions : MonoBehaviour
     [SerializeField] private PlayerBehaviour _playerBeh;
     [SerializeField] private Transform _instantiationPointParticles;
     [SerializeField] private ParticleSystem _attackParticleEffect;
+    [SerializeField] private AudioSource _audioSource;
+
+    [Header("Audioclips")]
+    [SerializeField] private AudioClip _hitSound;
+    [SerializeField] private AudioClip _quickAttackSound;
+    [SerializeField] private AudioClip _heavyAttackSound;
+    [SerializeField] private AudioClip _deathSound;
+    [SerializeField] private AudioClip _selectSound;
+    [SerializeField] private AudioClip _idleSound;
+    [SerializeField] private AudioClip _blockSound;
+
+
+
     public void ResetAnimTrigger()
     {
         _playerBeh.AnimController.ResetTrigger("FastAttack");
@@ -49,4 +62,32 @@ public class TriggerActions : MonoBehaviour
         obj.transform.SetParent(null);
         Destroy(obj, _attackParticleEffect.main.duration);
     }
+    public void PlayHitSound()
+    {
+        _audioSource.PlayOneShot(_hitSound);
+    }
+    public void PlayHeavySound()
+    {
+        _audioSource.PlayOneShot(_heavyAttackSound);
+    }
+    public void PlayQuickSound()
+    {
+        _audioSource.PlayOneShot(_quickAttackSound);
+    }
+    public void PlayDeathSound()
+    {
+        _audioSource.PlayOneShot(_deathSound);
+    }
+    public void PlayPickSound()
+    {
+        _audioSource.PlayOneShot(_selectSound);
+    }
+    public void PlayBlockSound()
+    {
+        _audioSource.PlayOneShot(_blockSound);
+    }
+    //public void PlayIdleSound()
+    //{
+    //    _audioSource.PlayOneShot(_idleSound);
+    //}
 }
