@@ -69,19 +69,19 @@ public class CursorMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        Clamp();
+        //Clamp();
     }
 
     private void Clamp()
     {
-        Vector3 viewPos = transform.position;
+        Vector3 viewPos = Camera.main.ViewportToScreenPoint(transform.position);
+        viewPos.Normalize();
         viewPos = new Vector3
         (
-            FloatClamp(viewPos.x, _screenBounds.x + _objectWidth, -(_screenBounds.x + _objectWidth)),
-            FloatClamp(viewPos.y, _screenBounds.y + _objectHeight, ((699.5f/100) - _objectHeight)),
-            viewPos.z
+            FloatClamp(viewPos.x,0,1),
+            FloatClamp(viewPos.y,0,1),
+            0
         );
-
 
         transform.position = viewPos;
     }
