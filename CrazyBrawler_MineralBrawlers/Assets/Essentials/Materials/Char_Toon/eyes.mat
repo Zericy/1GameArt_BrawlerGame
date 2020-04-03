@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_shell_glow_eyes
+  m_Name: eyes
   m_Shader: {fileID: -6465566751694194690, guid: f870291059754764f982b2356402fdbd,
     type: 3}
   m_ShaderKeywords: _EMISSION
