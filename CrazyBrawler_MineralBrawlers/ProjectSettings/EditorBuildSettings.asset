@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Essentials/Scenes/StartScreen_Scene.unity
+    guid: bd1a3b8f0f45310419f2741bf8fb0db8
+  - enabled: 0
     path: Assets/Essentials/Scenes/CharacterSelection_Scene.unity
     guid: 81f855f2c575e934b99d3d29944a3925
   - enabled: 0
     path: Assets/Essentials/Scenes/Arena_Scene.unity
     guid: 9e7a20ac257e55447ab53ca1cea5b085
-  - enabled: 1
+  - enabled: 0
     path: Assets/Essentials/Scenes/TestScene_Larissa.unity
     guid: a11658585f90feb46a1ce657a0820905
+  - enabled: 1
+    path: Assets/Essentials/Scenes/CharacterPortrait_Scene.unity
+    guid: 851d3dbe9bc838341a1a956d3d7edb5f
   m_configObjects: {}
