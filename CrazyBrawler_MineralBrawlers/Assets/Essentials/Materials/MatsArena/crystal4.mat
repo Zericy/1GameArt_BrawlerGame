@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: crystal3
+  m_Name: crystal4
   m_Shader: {fileID: -6465566751694194690, guid: f870291059754764f982b2356402fdbd,
     type: 3}
   m_ShaderKeywords: _EMISSION
@@ -74,7 +74,7 @@ Material:
     - Vector1_8386A876: 0.24
     - Vector1_BBA98306: 0.424
     - Vector1_C5F28BFB: -1.86
-    - Vector1_Fade: 0.69
+    - Vector1_Fade: 0
     - Vector1_Offset: 0
     - _AlphaClip: 0
     - _Blend: 0
@@ -110,7 +110,7 @@ Material:
     - Color_28DD6B4A: {r: 0, g: 0.7987694, b: 1, a: 0}
     - Color_3A4CC6EF: {r: 0, g: 0.8000001, b: 1, a: 1}
     - Color_676787A7: {r: 1, g: 0, b: 0, a: 0}
-    - Color_872C92C2: {r: 0.05490196, g: 0.9019608, b: 0.5254902, a: 0}
+    - Color_872C92C2: {r: 0.9019608, g: 0.32941177, b: 0.0627451, a: 0}
     - Color_BB4D3088: {r: 0, g: 0.96084595, b: 1, a: 1}
     - Color_DEB3AA71: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}
     - Color_E76A9024: {r: 0, g: 0.4995098, b: 1, a: 0}
