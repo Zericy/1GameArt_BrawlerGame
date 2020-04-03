@@ -811,6 +811,12 @@ PrefabInstance:
       propertyPath: IsPlayer2LockedIn
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8478884754563879984, guid: da0d4aab4e551d94e9339f2a8bc20401,
+        type: 3}
+      propertyPath: _characterObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 5407213666045190814, guid: 352b17d6451f69644bbbe5a5720228da,
+        type: 3}
     - target: {fileID: 8478884754563879985, guid: da0d4aab4e551d94e9339f2a8bc20401,
         type: 3}
       propertyPath: m_CellSize.x
