@@ -547,9 +547,9 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3661639628750336703, guid: ff847638ac3e6c14bb46b81c2e3941f5, type: 3}
-  - {fileID: -7318032641714640559, guid: ff847638ac3e6c14bb46b81c2e3941f5, type: 3}
-  - {fileID: 5629084884208175553, guid: ff847638ac3e6c14bb46b81c2e3941f5, type: 3}
+  - {fileID: 2100000, guid: 847c25f1666cfc94b954f263f37d5df1, type: 2}
+  - {fileID: 2100000, guid: 34f84f0d3198e3541bed61b3ced72336, type: 2}
+  - {fileID: 2100000, guid: 31868c92463793349b832a80b5a2b9ef, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -822,10 +822,13 @@ MonoBehaviour:
   _hitSound: {fileID: 0}
   _quickAttackSound: {fileID: 0}
   _heavyAttackSound: {fileID: 0}
+  _heavyAttackWindUpSound: {fileID: 0}
   _deathSound: {fileID: 0}
   _selectSound: {fileID: 0}
   _idleSound: {fileID: 0}
   _blockSound: {fileID: 0}
+  _footStepSounds: []
+  _optionalExtras: []
 --- !u!114 &4047510351456877458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -848,6 +851,9 @@ MonoBehaviour:
   _instantiationPointFloatingPoints: {fileID: 4892163146970446767}
   _instantiationPointParticles: {fileID: 9219697048596539621}
   _hitParticleEffect: {fileID: 0}
+  _shootingParticle: {fileID: 0}
+  _shootingParticlePosition: {fileID: 0}
+  _timeProjectileInstantiation: 0
 --- !u!1 &5473530012476534701
 GameObject:
   m_ObjectHideFlags: 0
