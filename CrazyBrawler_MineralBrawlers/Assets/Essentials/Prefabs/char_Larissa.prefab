@@ -43,8 +43,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.306151, y: 3.4590945, z: 3.3608735}
-  m_Center: {x: -0.15307648, y: 0.13685094, z: -0.035148107}
+  m_Size: {x: 8.500867, y: 3.4590945, z: 3.3608735}
+  m_Center: {x: 1.9442867, y: 0.13685188, z: -0.0351501}
 --- !u!114 &5815102264963402416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -928,9 +928,9 @@ MonoBehaviour:
   _idleSound: {fileID: 0}
   _blockSound: {fileID: 8300000, guid: e462382f934e0cf45a0a9ab1863de8fd, type: 3}
   _footStepSounds:
-  - {fileID: 8300000, guid: 1f914587926fe8f46a75a16b93b2f113, type: 3}
-  - {fileID: 8300000, guid: 47cf159779363cb40accfba2e2f55036, type: 3}
-  - {fileID: 8300000, guid: cbd9ae1d3055145429f6d7db637f4a91, type: 3}
+  - {fileID: 8300000, guid: 5eb920db253bdb54696f80d02f7c975c, type: 3}
+  - {fileID: 8300000, guid: ba0a51291cbda544d8eaae96ef197c37, type: 3}
+  - {fileID: 8300000, guid: 7709f95031a1a364baf6c3f086d31efa, type: 3}
   _optionalExtras: []
 --- !u!82 &1003183515431309560
 AudioSource:
@@ -944,7 +944,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.379
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
