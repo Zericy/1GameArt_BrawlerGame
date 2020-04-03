@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MAT_shell_glow_eyes 1
+  m_Name: MAT_Glow
   m_Shader: {fileID: -6465566751694194690, guid: 664472dbd9135764f947d02877bcc178,
     type: 3}
   m_ShaderKeywords: _EMISSION
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_F1C9DCC7:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 31530600f0f251345aef9920e58887e6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -114,7 +114,7 @@ Material:
     m_Colors:
     - Color_28DD6B4A: {r: 0, g: 0.7987694, b: 1, a: 0}
     - Color_3A4CC6EF: {r: 0.9294118, g: 0.19215688, b: 0.5372549, a: 1}
-    - Color_676787A7: {r: 0.15619439, g: 0.53828776, b: 0.735849, a: 0}
+    - Color_676787A7: {r: 0.132921, g: 0.76296276, b: 0.9716981, a: 0}
     - Color_872C92C2: {r: 0.020367522, g: 3.1365983, b: 3.8901966, a: 0}
     - Color_BB4D3088: {r: 0, g: 0.96084595, b: 1, a: 1}
     - Color_DEB3AA71: {r: 0.23584908, g: 0.23584908, b: 0.23584908, a: 1}

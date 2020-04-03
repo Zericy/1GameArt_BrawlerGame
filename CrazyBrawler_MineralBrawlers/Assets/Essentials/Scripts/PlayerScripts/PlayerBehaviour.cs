@@ -47,7 +47,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     private Vector3 impact;
 
-    
+    [SerializeField] private GameObject _shootingParticle;
+    [SerializeField] private GameObject _shootingParticlePosition;
+
+    [SerializeField] private float _timeProjectileInstantiation;
 
     // Start is called before the first frame update
     public void Initialize()
@@ -87,6 +90,11 @@ public class PlayerBehaviour : MonoBehaviour
             }
             if (Input.GetButtonDown(_heavyAttackButton) && !_isAttacking)
             {
+                if (_shootingParticle != null)
+                {
+                    StartCoroutine(FireProjectile(_timeProjectileInstantiation));
+                }
+
                 _animController.SetTrigger("HeavyAttack");
                 _doDamageValue = _characterStats.HeavyAttackDamage;
                 _isAttacking = true;
@@ -107,6 +115,13 @@ public class PlayerBehaviour : MonoBehaviour
             impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
 
         }
+    }
+    IEnumerator FireProjectile(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Vector3 position = this.transform.position + new Vector3(2, 4, 0);
+        GameObject particleObj = Instantiate(_shootingParticle, position, Quaternion.Euler(0, 90, 0));
+        particleObj.transform.SetParent(this.transform);
     }
 
     private void TriggerFightEnd()

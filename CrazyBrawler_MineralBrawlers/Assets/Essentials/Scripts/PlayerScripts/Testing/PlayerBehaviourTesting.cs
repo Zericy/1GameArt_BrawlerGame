@@ -43,6 +43,11 @@ public class PlayerBehaviourTesting : MonoBehaviour
     [SerializeField]
     private float _timeUntilNextBlock;
 
+    [SerializeField] private GameObject _shootingParticle;
+    [SerializeField] private GameObject _shootingParticlePosition;
+
+    [SerializeField] private float _timeProjectileInstantiation;
+
     private void Start()
     {
         transform.parent = null;
@@ -74,6 +79,11 @@ public class PlayerBehaviourTesting : MonoBehaviour
         
         if (Input.GetButtonDown(_heavyAttackButton) && !_isAttacking)
         {
+            if (_shootingParticle != null)
+            {
+                StartCoroutine(FireProjectile(_timeProjectileInstantiation));
+            }
+
             _animController.SetTrigger("HeavyAttack");
             _isAttacking = true;
         }
@@ -89,6 +99,14 @@ public class PlayerBehaviourTesting : MonoBehaviour
         if (impact.magnitude > 0.2) _characterController.Move(impact * Time.deltaTime);
         
         impact = Vector3.Lerp(impact, Vector3.zero, 2 * Time.deltaTime);
+    }
+
+    IEnumerator FireProjectile(float time)
+    {
+        yield return new WaitForSeconds(time);
+        Vector3 position = this.transform.position + new Vector3(2, 4,0);
+        Debug.Log(position);
+        GameObject particleObj = Instantiate(_shootingParticle, position, Quaternion.Euler(0, 90, 0));
     }
 
     private void TriggerFightEnd()
