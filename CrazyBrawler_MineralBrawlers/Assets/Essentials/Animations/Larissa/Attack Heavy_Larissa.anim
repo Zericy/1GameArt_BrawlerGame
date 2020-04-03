@@ -64026,6 +64026,13 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
+  - time: 0.43333334
+    functionName: PlayDeathSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 1.0833334
     functionName: SetTriggers
     data: 
@@ -64035,6 +64042,13 @@ AnimationClip:
     messageOptions: 0
   - time: 1.1666666
     functionName: TriggerParticles
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.25
+    functionName: PlayHeavySound
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

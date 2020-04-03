@@ -11,10 +11,14 @@ public class TriggerActions : MonoBehaviour
     [SerializeField] private AudioClip _hitSound;
     [SerializeField] private AudioClip _quickAttackSound;
     [SerializeField] private AudioClip _heavyAttackSound;
+    [SerializeField] private AudioClip _heavyAttackWindUpSound;
     [SerializeField] private AudioClip _deathSound;
     [SerializeField] private AudioClip _selectSound;
     [SerializeField] private AudioClip _idleSound;
     [SerializeField] private AudioClip _blockSound;
+    [SerializeField] private AudioClip[] _footStepSounds;
+    [SerializeField] private AudioClip[] _optionalExtras;
+
 
 
 
@@ -86,8 +90,29 @@ public class TriggerActions : MonoBehaviour
     {
         _audioSource.PlayOneShot(_blockSound);
     }
-    //public void PlayIdleSound()
-    //{
-    //    _audioSource.PlayOneShot(_idleSound);
-    //}
+    public void PlayIdleSound()
+    {
+        _audioSource.PlayOneShot(_idleSound);
+    }
+
+    public void PlayWindUpSound()
+    {
+        _audioSource.PlayOneShot(_heavyAttackWindUpSound);
+    }
+
+    private void PlayStepSound()
+    {
+        AudioClip clip = GetRandomClip(_footStepSounds);
+        _audioSource.PlayOneShot(clip);
+    }
+
+    private AudioClip GetRandomClip(AudioClip[] audioClips)
+    {
+        return audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
+    }
+
+    public void PlayExtraSound(int i)
+    {
+        _audioSource.PlayOneShot(_optionalExtras[i]);
+    }
 }
