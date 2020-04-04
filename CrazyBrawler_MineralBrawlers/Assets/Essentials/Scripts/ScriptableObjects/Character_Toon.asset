@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterImage: {fileID: 21300000, guid: c55cb67f2a457aa4184ac8131726cc09, type: 3}
   _characterName: Xynth
-  _health: 290
+  _health: 260
   _normalAttackDamage: 20
   _heavyAttackDamage: 55
-  _characterSpeed: 8
-  _timeUntilNextBlock: 2
-  _defence: 20
+  _characterSpeed: 6
+  _timeUntilNextBlock: 4
+  _defence: 50
   _weight: 5
