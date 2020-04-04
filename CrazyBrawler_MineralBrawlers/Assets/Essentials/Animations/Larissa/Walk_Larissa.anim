@@ -27070,6 +27070,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.05
+    functionName: ResetTriggers
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.43333334
     functionName: PlayStepSound
     data: 
@@ -27079,6 +27086,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.81666666
     functionName: PlayStepSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.81666666
+    functionName: ResetAnimTrigger
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

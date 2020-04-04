@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterImage: {fileID: 21300000, guid: 24b19eb45ead16f469b854842bdbd70a, type: 3}
   _characterName: Erok
-  _health: 240
-  _normalAttackDamage: 26.5
-  _heavyAttackDamage: 70.2
+  _health: 280
+  _normalAttackDamage: 40
+  _heavyAttackDamage: 50
   _characterSpeed: 10
   _timeUntilNextBlock: 1
-  _defence: 20
-  _weight: 5
+  _defence: 41
+  _weight: 3
