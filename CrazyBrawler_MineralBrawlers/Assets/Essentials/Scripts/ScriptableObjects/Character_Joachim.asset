@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterImage: {fileID: 21300000, guid: bd0920830f559644195f8d07013ec2ae, type: 3}
   _characterName: Cobble
-  _health: 250
-  _normalAttackDamage: 25
-  _heavyAttackDamage: 50
-  _characterSpeed: 20
+  _health: 270
+  _normalAttackDamage: 35
+  _heavyAttackDamage: 58
+  _characterSpeed: 6.8
   _timeUntilNextBlock: 2
-  _defence: 20
-  _weight: 5
+  _defence: 25
+  _weight: 8
