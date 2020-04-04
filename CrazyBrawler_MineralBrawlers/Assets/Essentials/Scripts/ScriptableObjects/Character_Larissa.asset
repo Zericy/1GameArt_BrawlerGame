@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterImage: {fileID: 21300000, guid: bf66447ab372298438acd8009951940e, type: 3}
   _characterName: Calyx
-  _health: 250
-  _normalAttackDamage: 25
-  _heavyAttackDamage: 50
-  _characterSpeed: 7
-  _timeUntilNextBlock: 1
-  _defence: 30
+  _health: 255
+  _normalAttackDamage: 26
+  _heavyAttackDamage: 55
+  _characterSpeed: 10
+  _timeUntilNextBlock: 0
+  _defence: 50
   _weight: 4
