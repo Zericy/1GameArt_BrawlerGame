@@ -772,10 +772,10 @@ MonoBehaviour:
   _idleSound: {fileID: 0}
   _blockSound: {fileID: 8300000, guid: 70e17ca892185894d83440cd46f137e1, type: 3}
   _footStepSounds:
-  - {fileID: 8300000, guid: 55b936394ab1bf946a0ab0f31ab653e8, type: 3}
-  - {fileID: 8300000, guid: cece0e75ddc41a4458dee625cf01a9ed, type: 3}
+  - {fileID: 8300000, guid: ed71eb039d1d6df4d850fc585de4e209, type: 3}
+  - {fileID: 8300000, guid: cea25d736695c4c42a09022585d851f0, type: 3}
   _optionalExtras:
-  - {fileID: 8300000, guid: ad677c6630d70734093ea92104b9bcea, type: 3}
+  - {fileID: 8300000, guid: 416e957c520f2e34ea0d1950eefefd37, type: 3}
   - {fileID: 8300000, guid: 284265fd26c5b424b9128f070856c590, type: 3}
 --- !u!95 &2669479355504931618
 Animator:
