@@ -1222,7 +1222,7 @@ MonoBehaviour:
   _heavyAttackWindUpSound: {fileID: 0}
   _deathSound: {fileID: 8300000, guid: ca27178b1e10a9c4c85a6b4c75f80e61, type: 3}
   _selectSound: {fileID: 8300000, guid: 841f672c4d3ea7447a284e39a5b68666, type: 3}
-  _idleSound: {fileID: 8300000, guid: 12436fef67d943446a98a3cff00296b9, type: 3}
+  _idleSound: {fileID: 8300000, guid: 4a2776ef1f724064eb7079613b297110, type: 3}
   _blockSound: {fileID: 8300000, guid: 8b1756cc76f6cc24b83d0684863cf426, type: 3}
   _footStepSounds:
   - {fileID: 8300000, guid: 36f493fbc19a5aa4d9c25c305fd946b7, type: 3}
