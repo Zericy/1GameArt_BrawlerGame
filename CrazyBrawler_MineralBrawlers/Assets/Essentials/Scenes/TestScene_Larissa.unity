@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f5d1ef30431693c40ac4e4bf4285958c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 8da3d949b6ea2db4983295423b5020c1,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1052,6 +1052,9 @@ MonoBehaviour:
   _attackTriggers: []
   _characterSpeed: 1.5
   _timeUntilNextBlock: 2
+  _shootingParticle: {fileID: 0}
+  _shootingParticlePosition: {fileID: 0}
+  _timeProjectileInstantiation: 0
 --- !u!1 &1357862666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1217,6 +1220,9 @@ MonoBehaviour:
   _attackTriggers: []
   _characterSpeed: 3
   _timeUntilNextBlock: 2
+  _shootingParticle: {fileID: 0}
+  _shootingParticlePosition: {fileID: 0}
+  _timeProjectileInstantiation: 0
 --- !u!143 &1506904132
 CharacterController:
   m_ObjectHideFlags: 0
