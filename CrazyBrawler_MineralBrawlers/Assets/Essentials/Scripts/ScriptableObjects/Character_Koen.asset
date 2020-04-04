@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterImage: {fileID: 21300000, guid: 681036fd2ed45bc4588d8c654483af12, type: 3}
   _characterName: Magmus
-  _health: 300
-  _normalAttackDamage: 20
+  _health: 224
+  _normalAttackDamage: 40
   _heavyAttackDamage: 70
   _characterSpeed: 20
   _timeUntilNextBlock: 2
-  _defence: 20
-  _weight: 5
+  _defence: 40
+  _weight: 8
