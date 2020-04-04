@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8039858179665274301}
   - component: {fileID: 4047510351456877483}
-  - component: {fileID: 6655751137139824363}
+  - component: {fileID: 1066403383807522689}
   m_Layer: 0
   m_Name: Base Human003Ribcage
   m_TagString: hitbox
@@ -453,7 +453,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!65 &6655751137139824363
+--- !u!65 &1066403383807522689
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -461,11 +461,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3864146939402363190}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.32, y: 1.58, z: 1.57}
-  m_Center: {x: 0.01, y: 0.17, z: 0}
+  m_Size: {x: 3.07, y: 1.5, z: 1.24}
+  m_Center: {x: 0, y: 0.15, z: 0}
 --- !u!1 &4192574054619364794
 GameObject:
   m_ObjectHideFlags: 0
